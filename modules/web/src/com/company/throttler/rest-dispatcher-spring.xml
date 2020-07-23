@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc">
+
+    <context:component-scan base-package="com.company.throttler.web"/>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <ref bean="throttler_GenericRestLimitInterceptor"/>
+        </mvc:interceptor>
+
+    </mvc:interceptors>
+
+
+</beans>

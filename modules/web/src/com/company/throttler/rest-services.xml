@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services xmlns="http://schemas.haulmont.com/cuba/rest-services-v2.xsd">
+
+    <service name="throttler_HelloService">
+        <method name="sayHello">
+            <param name="name" type="java.lang.String"/>
+        </method>
+    </service>
+
+</services>
+
